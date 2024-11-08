@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>まるばつゲーム的なやつ</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <h1>まるばつゲーム的なやつ</h1>
+  <div id="info" class="info">
+    ◯の番!
+  </div>
+  <div class="squares">
+    <table id="table" style="margin-left: auto; margin-right: auto;">
+      <tr>
+        <td id="00" onclick="game('00');"></td>
+        <td id="01" onclick="game('01');"></td>
+        <td id="02" onclick="game('02');"></td>
+      </tr>
+      <tr>
+        <td id="10" onclick="game('10');"></td>
+        <td id="11" onclick="game('11');"></td>
+        <td id="12" onclick="game('12');"></td>
+      </tr>
+      <tr>
+        <td id="20" onclick="game('20');"></td>
+        <td id="21" onclick="game('21');"></td>
+        <td id="22" onclick="game('22');"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="reload">
+    <button type="button" onClick="reset();">やり直す</button>
+  </div>
+  <h2>遊び方</h2>
+  <ul>
+    <li>自分が置いた根上さんか、中野さんを３人縦、横、斜めのどれかで並べることができた人の勝ち</li>
+    <li>出番開始時に緑の線と赤い線が重なったときにタイミングよくクリックすると行動できる</li>
+  </ul>
+  <dialog id="timing" class="timing">
+    <div id="timing-bar" class="timing-bar">
+      <div id="timing-range" class="timing-range"></div>
+      <div id="timing-moving" class="timing-moving"></div>
+    </div>
+  </dialog>
+  <!-- <button onclick="document.querySelector('dialog').showModal()">test</button> -->
+</body>
+
+</html>

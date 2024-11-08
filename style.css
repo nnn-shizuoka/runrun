@@ -1,0 +1,105 @@
+body {
+    background: #f4eade;
+    color: #555555;
+    padding: 50px;
+    text-align: center;
+}
+
+.white-box {
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    width: 400px;
+}
+
+.title {
+    font-size: 400px;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 20px;
+    margin: 20px;
+}
+
+td {
+    border: solid 2px rgb(201, 25, 25);
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+button {
+    background: #2F496E;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+}
+
+.timing {
+    position: fixed;
+    inset: 0;
+    width: 500px;
+    height: 300px;
+    border: none;
+    outline: none;
+    background: hsl(33, 50%, 91%);
+}
+
+.timing[open] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timing-bar {
+    position: relative;
+    height: 100px;
+    background-color: rgb(0, 15, 148);
+}
+
+.timing-range {
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    top: 0;
+}
+
+.timing-moving {
+    position: absolute;
+    background-color: rgb(21, 255, 0);
+    height: 100%;
+    top: 0;
+}
+
+[data-symbol="◯"] {
+    background-size: cover;
+}
+
+.preset1 [data-symbol="◯"] {
+    background-image: url(negami-o.png);
+}
+
+.preset2 [data-symbol="◯"] {
+    background-image: url(nakano-o.png);
+}
+
+[data-symbol="✕"] {
+    background-size: cover;
+}
+
+.preset1 [data-symbol="✕"] {
+    background-image: url(nakano-x.png);
+}
+
+.preset2 [data-symbol="✕"] {
+    background-image: url(negami-x.png);
+}
+
+ul {
+    list-style: none;
+}
